@@ -1,6 +1,4 @@
-# Dynamic Orchestration Template
-
-A "one-size-fits-all" template for orchestration scripts.
+# Orchestration Template
 
 If credentials.py file is missing from directory, create the file and add the following dictionary.
 
