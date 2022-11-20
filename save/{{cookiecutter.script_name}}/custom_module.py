@@ -15,5 +15,6 @@ def custom_flow(sandbox, components=None):
     reporter.warning("Starting Pre-sandbox save flow..")
 
     sb_details = api.GetReservationDetails(reservationId=sb_id, disableCache=True).ReservationDescription
-    reporter.info(f"Resource count in sandbox: {sb_details.Resources}")
+    resources = sb_details.Resources
+    reporter.info(f"Resource count in sandbox: {len(resources)}")
 

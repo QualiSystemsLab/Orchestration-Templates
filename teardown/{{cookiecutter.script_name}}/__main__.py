@@ -4,5 +4,5 @@ from custom_module import custom_flow
 
 sandbox = Sandbox()
 DefaultTeardownWorkflow().register(sandbox)
-sandbox.workflow.on_configuration_ended(custom_flow)
+sandbox.workflow.add_to_teardown(custom_flow)
 sandbox.execute_teardown()
